@@ -34,21 +34,28 @@ const SlideBox = () => {
   };
   return (
     <div className="container">
-      <ArrowCircleLeftRoundedIcon
+        <h2>Image Slider App</h2>
+        <div className="img-rap">
+        <ArrowCircleLeftRoundedIcon
       className="" 
       onClick={ArrowBack} 
       disabled={image > 1 ? false : true} 
       style={{
         color:image > 1 ? 'black' : 'red'
       }}
+      sx={{fontSize :'2.5rem'}}
       />
-      <img src={pic} alt={image} />
+      <img src={pic} className="slideImage" alt={image} />
       <ArrowCircleRightRoundedIcon 
         className=""
         onClick={ArrowNext}
         disabled={image < 5 ? false : true}
-        sx={{color:image < 5 ? 'black' : 'red'}}
+        sx={{fontSize :'2.5rem'}}
+        style={{
+            color:image < 5 ? 'black' : 'red'
+          }}
       />
+        </div>
     </div>  
   );
 };

@@ -1,5 +1,15 @@
-.container{
+
+.slideImage{
+    border-radius: 6px;
+    margin: 5px;
+}
+.img-rap{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+h2{
+    font-size: 3rem;
+    font-family:'fansong';
+    color:#000;
 }
